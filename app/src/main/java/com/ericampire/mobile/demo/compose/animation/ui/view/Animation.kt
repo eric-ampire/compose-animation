@@ -116,10 +116,11 @@ fun WaveView(
   )
 
   val dy by deltaXAnim.animateFloat(
-    initialValue = 600f,
+    initialValue = 300f,
     targetValue = 0f,
     animationSpec = infiniteRepeatable(
-      animation = tween(7000, easing = LinearEasing)
+      animation = tween(5000, easing = LinearEasing),
+      repeatMode = RepeatMode.Reverse
     )
   )
 
